@@ -3,7 +3,7 @@ function ReadSObject(file, onerror) {
   return onerror;
 }
 
-var SObject = test;
+var SObject = null;
 
 ReadSObject(SObject, function () {
   alert("hi")
