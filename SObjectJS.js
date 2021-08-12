@@ -1,6 +1,10 @@
 //Converts SObject Files Into JSON
-function ReadSObject(file, onerror) {
+var SObject = '("test" {"Hello", World})'
+function ReadObject(object, Success) {
   
   var error = 'An Error Has Occured';
-  return onerror;
+  var result = object.replace("("|")", "{"|"}");
+  return Success;
 }
+
+ReadObject(SObject, alert(result))
